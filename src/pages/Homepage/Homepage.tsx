@@ -35,7 +35,13 @@ export const Homepage = () => {
   return (
     <div className="h-full flex flex-col gap-6">
       <div className="flex justify-between">
-        <MainInfo />
+        <MainInfo
+          city="New York"
+          status="Cloudy"
+          deegre={22}
+          date={"12 Dec 2023"}
+          day="Sunday"
+        />
         {!isMobile && <img src={CloudIcon} height={321} />}
       </div>
       {isMobile ? <MobileContent /> : <DesktopContent />}
