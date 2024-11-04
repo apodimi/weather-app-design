@@ -100,7 +100,7 @@ export const TempChart = () => {
       >
         <XAxis dataKey="time" spacing={10} hide />
         <YAxis domain={[10, 30]} hide />
-        <Tooltip content={<CustomTooltip />} cursor={<CustomCursor />} />
+        <Tooltip cursor={<CustomCursor />} />
         <Line
           type="monotone"
           dataKey="temperature"
@@ -118,9 +118,6 @@ export const TempChart = () => {
                 textAnchor="middle"
                 fontSize={14}
               >
-                {value}°C
-              </text>
-              <text x={x} y={y + 50} fill="#fff" textAnchor="middle">
                 {value}°C
               </text>
             </>
